@@ -1,0 +1,19 @@
+author = "Sephyr";
+onLoadName = "Virtual Shooting Range";
+respawn = BASE;
+respawndelay = 10;
+disabledAI = true;
+
+#include "VVS\menu.h"
+
+class CfgFunctions
+{
+	#include "VVS\Functions.h"
+	#include "LVR\functions\functions.hpp"
+	class MarkerBounds {
+		tag = "LARs";
+		class Markers {
+			class markerBoundArea {};
+		};
+	};
+};

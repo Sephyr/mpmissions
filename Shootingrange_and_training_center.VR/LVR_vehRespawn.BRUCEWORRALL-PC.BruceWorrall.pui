@@ -1,0 +1,28 @@
+[Open Files]
+Active File Display Mode=3
+Active File Index=4
+Open File Line0=0
+Open File Line1=0
+Open File Line2=0
+Open File Line3=0
+Open File Line4=1343
+Open File Pos0=577
+Open File Pos1=0
+Open File Pos2=0
+Open File Pos3=772
+Open File Pos4=2059
+Open File Window Pos0=0,1,-1,-1,-8,-30,150,150,1185,480
+Open File Window Pos1=0,1,-1,-1,-8,-30,0,0,1039,334
+Open File Window Pos2=0,1,-1,-1,-8,-30,100,100,1139,434
+Open File Window Pos3=0,1,-1,-1,-8,-30,125,125,1164,459
+Open File Window Pos4=2,3,-1,-1,-8,-30,150,150,1189,484
+Open File0=.\LVR\abandonMarker.sqf
+Open File1=.\description.ext
+Open File2=.\init.sqf
+Open File3=.\LVR\LVR.hpp
+Open File4=.\LVR\vehRespawn.sqf
+Open File5=
+
+[Project Information]
+Project Start=DD070B0005000800140006000300000019
+Working Time=22298
