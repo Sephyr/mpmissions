@@ -333,7 +333,7 @@ _skill_count = (count _group_skill) - 1;
 
 
 
-		for "_i" from 0 to (_group_counter - 1) do
+/* 		for "_i" from 0 to (_group_counter - 1) do
 		{
 
 			_this_group = _all_groups select _i;
@@ -380,7 +380,7 @@ _skill_count = (count _group_skill) - 1;
 			[_this_group, 2] setWaypointPosition [ getPosATL player, random (_max_enemy_distance) ];
 
 
-		};
+		}; */
 
 
 	sleep _sleep_delay;
