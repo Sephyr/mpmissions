@@ -1,3 +1,5 @@
+if ((!isServer) && (player != player)) then {waitUntil {player == player};};
+
 if (hasInterface) then {
 	//run on all player clients incl. player host
 	effect_screen = ppEffectCreate ["FilmGrain", 2000];

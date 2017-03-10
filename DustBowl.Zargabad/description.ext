@@ -1,14 +1,14 @@
 // === MISSION OVERVIEW
 
-//overviewText 	= "DUST STORM SCRIPT DEMO";	// mission summary
-//overviewPicture = "Img\Snapshot.jpg";
+overviewText 	= "DustBowl";	// mission summary
+overviewPicture = "Img\HKT_4.paa";
 
 // === LOAD SCREEN
 
-//onLoadName 		= DUST STORM SCRIPT DEMO;
-//author 			= ALIAS;									
-//onLoadMission 	= Dust Storm Script - stand alone version*;
-//loadScreen 		= "Img\Overlay.jpg";
+onLoadName 		= DustBowl;
+author 			= "Atraf and Sephyr";
+onLoadMission 	= DustBowl;
+loadScreen 		= "Img\HKT_4.paa";
 
 
 class CfgSounds
