@@ -1,11 +1,8 @@
 
 
-private ["_min_groups", "_max_groups", "min_group_size", "_max_group_size", "_number_groups", "_man_type"];
+private ["_min_groups", "_max_groups", "min_group_size", "_max_group_size", "_number_groups", "_faction", "_kit", "_man_type"];
 
 private ["_this_speed","_speed","_this_formation","_formation","_formation_count","_this_group","_this_man_odds","skill_odds","_skill_index"];
-
-
-
 
 _group0 = Creategroup EAST;
 _group1 = Creategroup EAST;
@@ -17,40 +14,59 @@ _group6 = Creategroup EAST;
 _group7 = Creategroup EAST;
 
 // ******************************************************************************************************************************************************************************
+// Trigger on activation example: null = [5,5,4,5,250,400,200,"CSAT","Default"] execVM "DAS\DynamicAISpawn.sqf"; <-- this will spawn default brown CSAT AI with their respected class loadout.
+// Trigger on activation example: null = [5,5,4,5,250,400,200,"CUPTKM","Desert"] execVM "DAS\DynamicAISpawn.sqf"; <-- this will spawn CUP Takistan Militia AI and change their gear to a more advanced desert loadout.
 
 // SET UP STUFF IN HERE!!!!
 
-_min_groups = 2;		// The mimimum number of groups that will be created
-_max_groups = 5;		// The maximum number of groups that will be created. This number CANNOT exceed 8
+_min_groups = 			_this select 0;		// The mimimum number of groups that will be created
+_max_groups = 		_this select 1;		// The maximum number of groups that will be created. This number CANNOT exceed 8
 
-_min_group_size = 2;	// The minimum number of people a group can contain
-_max_group_size = 4;	// The maximum number of people a group can contain.
+_min_group_size = 	_this select 2;	// The minimum number of people a group can contain
+_max_group_size = 	_this select 3;	// The maximum number of people a group can contain.
 
-_start_distance = 250;		// This is the minimum spawn distance for a group from the trigger point
-_max_distance = 400;	// This is the maximum spawn distance for a group from the trigger point
+_start_distance = 		_this select 4;		// This is the minimum spawn distance for a group from the trigger point
+_max_distance = 		_this select 5;	// This is the maximum spawn distance for a group from the trigger point
 
-_max_enemy_distance = 100;	// This is the maximum distance a group can be from the player as the group follows the player around
+_max_enemy_distance = _this select 6;	// This is the maximum distance a group can be from the player as the group follows the player around
 
+_faction = 				_this select 7;		// Set the faction for the enemy spawns (impacts the voice and face of the spawned unit) Other variables are: [Vanilla] CSAT, CSATU, CSATJ, VIPER, FIA    [CUP] CUPINS, CUPSLA, CUPTKA, CUPTKM  [RHS]  RHSGREF, RHSAFRF
+_kit = 						_this select 8;		// Set this to the loadout type the unit should have, Default is regular CSAT. Other variables are: Desert, Snow, Jungle, Forest, Urban, PMC, Takistan, CivVanilla, CivArma2
 
 // ******************************************************************************************************************************************************************************
 //
 // This array contains the type of enemy soldiers that a group can contain.
 
-_man_type=["rhs_vdv_rifleman","rhs_vdv_rifleman_alt","rhs_vdv_grenadier","rhs_vdv_machinegunner","rhs_vdv_LAT"];
+_man_type = switch (_faction) do {
+	case "CSAT":	{["O_Soldier_SL_F","O_Soldier_F","O_Soldier_LAT_F","O_Soldier_AR_F","O_SoldierU_GL_F"]};
+	case "CSATU":	{["O_SoldierU_SL_F","O_soldierU_F","O_soldierU_LAT_F","O_soldierU_AR_F","O_Soldier_GL_F"]};
+	case "CSATJ":	{["O_T_Soldier_SL_F","O_T_Soldier_F","O_T_Soldier_LAT_F","O_T_Soldier_AR_F","O_T_Soldier_GL_F"]};
+	case "VIPER":	{["O_V_Soldier_TL_ghex_F","O_V_Soldier_ghex_F","O_V_Soldier_LAT_ghex_F","O_V_Soldier_Medic_ghex_F","O_V_Soldier_M_ghex_F"]};
+	case "FIA":		{["O_G_Soldier_SL_F","O_G_Soldier_F","O_G_Soldier_LAT_F","O_G_Soldier_AR_F","O_G_Soldier_GL_F"]};
+	case "CUPINS":	{["CUP_O_INS_Officer","CUP_O_INS_Soldier","CUP_O_INS_Soldier_AT","CUP_O_INS_Soldier_AR","CUP_O_INS_Soldier_GL"]};
+	case "CUPSLA":	{["CUP_O_sla_Soldier_SL","CUP_O_sla_Soldier","CUP_O_sla_Soldier_AT","CUP_O_sla_Soldier_MG","CUP_O_sla_Soldier_GL"]};
+	case "CUPTKA":	{["CUP_O_TK_Soldier_SL","CUP_O_TK_Soldier","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_GL"]};
+	case "CUPTKM":	{["CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Soldier_GL"]};
+	case "RHSGREF":	{["rhsgref_ins_squadleader","rhsgref_ins_rifleman","rhsgref_ins_rifleman_RPG26","rhsgref_ins_machinegunner","rhsgref_ins_grenadier"]};
+	case "RHSAFRF": 	{["rhs_vdv_sergeant","rhs_vdv_rifleman","rhs_vdv_LAT","rhs_vdv_machinegunner","rhs_vdv_grenadier"]};
+};
+
+//
+//_man_type=_man_faction;
 
 // The man odds give the chances of what type of soldiers the enemy group will contain. 100 is 100%
 //
 // For example, if _man_odds_group1=[100,70,60,10,5]; it means that the chances of O_Soldier_F being created are 100 - 70, which is 30%, for 
 // O_officer_F, the chances are 70 - 60 which is 10% chance. And so on. Each group can have different odds.
 
-_man_odds_group0=[100,90,60,20,10];
-_man_odds_group1=[100,70,60,10,5];
-_man_odds_group2=[100,50,40,10,5];
-_man_odds_group3=[100,95,40,30,25];
-_man_odds_group4=[100,80,20,15,5];
-_man_odds_group5=[100,50,40,10,5];
-_man_odds_group6=[100,50,40,10,5];
-_man_odds_group7=[100,50,40,10,5];
+_man_odds_group0=[100,95,50,40,20];
+_man_odds_group1=[100,95,50,40,20];
+_man_odds_group2=[100,95,50,40,20];
+_man_odds_group3=[100,95,50,40,20];
+_man_odds_group4=[100,95,50,40,20];
+_man_odds_group5=[100,95,50,40,20];
+_man_odds_group6=[100,95,50,40,20];
+_man_odds_group7=[100,95,50,40,20];
 
 
 // ******************************************************************************************************************************************************************************
@@ -63,9 +79,11 @@ _man_odds_group7=[100,50,40,10,5];
 // The initial delay before any groups are spawned will be 30 seconds + random time of (40 - 30), so 30 seconds + random of 10 seconds.
 // The next group will spawn at 45 seconds + random time of (60 - 45), so 45 seconds + random of 15 seconds, and so on.
 
-_group_spawn_delay_min=[60,60,60,60,60,120,120,120,120];
-_group_spawn_delay_max=[60,60,60,60,60,120,120,120,120]; 
-_sleep_delay = 30;						// This MUST be at least two times less than any of the _group_spawn_delay numbers
+//_group_spawn_delay_min=[60,60,60,60,60,120,120,120,120];
+//_group_spawn_delay_max=[60,60,60,60,60,120,120,120,120]; 
+_group_spawn_delay_min=[15,15,15,15,15,30,30,30,30];
+_group_spawn_delay_max=[15,15,15,15,15,30,30,30,30]; 
+_sleep_delay = 6;						// This MUST be at least two times less than any of the _group_spawn_delay numbers
 
 // ******************************************************************************************************************************************************************************
 //
@@ -220,24 +238,71 @@ _skill_count = (count _group_skill) - 1;
 
 					};
 					
-					_spawn_position_safe = [_spawn_position, _start_distance, _max_distance, 3, 0, 30, 0] call BIS_fnc_findSafePos;
+					//_spawn_position_safe = [_spawn_position, _start_distance, _max_distance, 3, 0, 30, 0] call BIS_fnc_findSafePos;
 					_man = _man_type select _this_man;
-					_man createUnit [_spawn_position_safe, _this_group,"this allowFleeing 0", _skill_level, "Private"];
-
-
+					_man createUnit [_spawn_position, _this_group,"this allowFleeing 0", _skill_level, "Private"];
+					//hint format ["ENEMY SPAWNED: Group size %1, Skill: %2", _group_size,_man];
+					
 				};
-
-
-//				hint format ["ENEMY SPAWNED: Group size %1, Skill: %2", _group_size,_skill_level_name];
-
-
-
+				
+				
+					{
+						if (_kit == "Default") exitWith  {};
+						
+						this = _x;
+						removeAllWeapons this;
+						removeAllItems this;
+						removeAllAssignedItems this;
+						removeUniform this;
+						removeVest this;
+						removeBackpack this;
+						removeHeadgear this;
+						removeGoggles this;
+						
+						if (_kit == "Desert") then {
+							_randomgear = switch (floor random(3)) do {
+								case 0: {"DAS\Gear_Dst_AK.sqf"};
+								case 1: {"DAS\Gear_Dst_AKRPG.sqf"};
+								case 2: {"DAS\Gear_Dst_RPK.sqf"};
+							};
+							null = [] execVM _randomgear;
+							sleep 1;
+						};
+						if (_kit == "Urban") then {
+							_randomgear = switch (floor random(3)) do {
+								case 0: {"DAS\Gear_Urb_AK.sqf"};
+								case 1: {"DAS\Gear_Urb_AKRPG.sqf"};
+								case 2: {"DAS\Gear_Urb_RPK.sqf"};
+							};
+							null = [] execVM _randomgear;
+							sleep 1;
+						};
+						if (_kit == "Custom01") then {
+							_randomgear = switch (floor random(3)) do {
+								case 0: {"DAS\Gear_C01_01.sqf"};
+								case 1: {"DAS\Gear_C01_02.sqf"};
+								case 2: {"DAS\Gear_C01_03.sqf"};
+							};
+							null = [] execVM _randomgear;
+							sleep 1;
+						};
+						if (_kit == "Custom02") then {
+							_randomgear = switch (floor random(3)) do {
+								case 0: {"DAS\Gear_C02_01.sqf"};
+								case 1: {"DAS\Gear_C02_02.sqf"};
+								case 2: {"DAS\Gear_C02_03.sqf"};
+							};
+							null = [] execVM _randomgear;
+							sleep 1;
+						};
+					} foreach units _this_group;
+					//sleep 3;
 
 				_formation = _formation_type select floor random count _formation_type;
 
 				_wp1 = _this_group addWaypoint [position player, _max_enemy_distance];
-				_wp2 = _this_group addWaypoint [position player, _max_enemy_distance];
-				_wp3 = _this_group addWaypoint [position player, _max_enemy_distance]; 
+				//_wp2 = _this_group addWaypoint [position player, _max_enemy_distance];
+				//_wp3 = _this_group addWaypoint [position player, _max_enemy_distance]; 
 
 				_wp1 setWaypointBehaviour "AWARE"; 
 				_wp1 setwaypointtype "MOVE"; 
@@ -246,9 +311,9 @@ _skill_count = (count _group_skill) - 1;
 				_wp1 setwaypointstatements ["True", ""];
 
 
-				_wp2 setwaypointtype "MOVE"; 
+				//_wp2 setwaypointtype "MOVE"; 
 
-				_wp3 setWaypointType "Cycle";
+				//_wp3 setWaypointType "Cycle";
 
 				_group_counter = _group_counter + 1;
 
@@ -262,15 +327,13 @@ _skill_count = (count _group_skill) - 1;
 //				hint format ["Initial Delay: %1", _delay_time];
 
 			};
-
-
 		};
 
 
 
 
 
-		for "_i" from 0 to (_group_counter - 1) do
+/* 		for "_i" from 0 to (_group_counter - 1) do
 		{
 
 			_this_group = _all_groups select _i;
@@ -317,7 +380,7 @@ _skill_count = (count _group_skill) - 1;
 			[_this_group, 2] setWaypointPosition [ getPosATL player, random (_max_enemy_distance) ];
 
 
-		};
+		}; */
 
 
 	sleep _sleep_delay;
