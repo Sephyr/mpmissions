@@ -267,10 +267,6 @@ _skill_count = (count _group_skill) - 1;
 							};
 							null = [] execVM _randomgear;
 							sleep 1;
-							// _pathToScripts = "scripts\";
-							// _loadoutArray = ["Gear_Dst-AK.sqf", "Gear_Dst-AKRPG.sqf", "Gear_Dst-RPK.sqf"];
-							// _randomLoadout = _loadoutArray call BIS_fnc_selectRandom;
-							// null = execVM format ["%1%2",_pathToScripts,_randomLoadout];
 						};
 						if (_kit == "Urban") then {
 							_randomgear = switch (floor random(3)) do {
@@ -280,21 +276,27 @@ _skill_count = (count _group_skill) - 1;
 							};
 							null = [] execVM _randomgear;
 							sleep 1;
-							// _pathToScripts = "scripts\";
-							// _loadoutArray = ["Gear_Dst-AK.sqf", "Gear_Dst-AKRPG.sqf", "Gear_Dst-RPK.sqf"];
-							// _randomLoadout = _loadoutArray call BIS_fnc_selectRandom;
-							// null = execVM format ["%1%2",_pathToScripts,_randomLoadout];
 						};
-						//this = _x;
-						//null = [] execVM "scripts\DynamicAIGear.sqf";
-						// _DynamicGear = compile preprocessfilelinenumbers "scripts\DynamicAIGear.sqf";
-						// call _DynamicGear;
+						if (_kit == "Custom01") then {
+							_randomgear = switch (floor random(3)) do {
+								case 0: {"DAS\Gear_C01_01.sqf"};
+								case 1: {"DAS\Gear_C01_02.sqf"};
+								case 2: {"DAS\Gear_C01_03.sqf"};
+							};
+							null = [] execVM _randomgear;
+							sleep 1;
+						};
+						if (_kit == "Custom02") then {
+							_randomgear = switch (floor random(3)) do {
+								case 0: {"DAS\Gear_C02_01.sqf"};
+								case 1: {"DAS\Gear_C02_02.sqf"};
+								case 2: {"DAS\Gear_C02_03.sqf"};
+							};
+							null = [] execVM _randomgear;
+							sleep 1;
+						};
 					} foreach units _this_group;
 					//sleep 3;
-				
-
-
-
 
 				_formation = _formation_type select floor random count _formation_type;
 
@@ -325,8 +327,6 @@ _skill_count = (count _group_skill) - 1;
 //				hint format ["Initial Delay: %1", _delay_time];
 
 			};
-
-
 		};
 
 
