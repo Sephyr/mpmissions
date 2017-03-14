@@ -11,6 +11,27 @@ onLoadMission 	= DustBowl;
 loadScreen 		= "Img\HKT_4.paa";
 
 
+//Allow functions to log to the RPT file. Set it to 1/true to allow RPT logging. 0 = Disable, 1 = Enable
+allowFunctionsLog = 1;//true
+
+//Allows access to the Debug Console outside of the editor during normal gameplay.0 = Default behavior, available only in editor, 1 = Available in SP and for hosts / logged in admins, 2 = Available for everyone
+enableDebugConsole = 1;
+
+//Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
+onLoadMissionTime = 1;
+
+//Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
+onLoadIntroTime = 1;
+
+//Multiplayer Game Type info
+class Header
+{
+	gameType = ZCoop;
+	minPlayers = 1;
+	maxPlayers = 12;
+};
+
+
 class CfgSounds
 {
 	class uragan_1
