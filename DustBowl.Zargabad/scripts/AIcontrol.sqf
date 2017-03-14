@@ -1,6 +1,6 @@
 AIcontrol = [] spawn {
 
-_checkDistanceSqr = (1000 * 1000);
+_checkDistanceSqr = (750 * 750);
 
 while {alive player} do {
 
