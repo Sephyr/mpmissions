@@ -8,22 +8,22 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=3346;
+		nextID=3350;
 	};
 	class MarkerIDProvider
 	{
-		nextID=5;
+		nextID=6;
 	};
 	class LayerIndexProvider
 	{
-		nextID=83;
+		nextID=88;
 	};
 	class Camera
 	{
-		pos[]={4994.4722,154.29156,6048.5977};
-		dir[]={-0.64804012,-0.70172805,0.2963379};
-		up[]={-0.63821375,0.71239436,0.29184338};
-		aside[]={0.41589826,-1.020846e-006,0.90951049};
+		pos[]={4958.9731,77.616768,6081.6084};
+		dir[]={0.014158506,-0.76214665,0.64741588};
+		up[]={0.016664052,0.64736062,0.76199371};
+		aside[]={0.99985468,-7.3960109e-007,-0.021862201};
 	};
 };
 binarizationWanted=0;
@@ -787,7 +787,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=509;
+		items=513;
 		class Item0
 		{
 			dataType="Object";
@@ -49613,6 +49613,65 @@ class Mission
 			};
 			id=3344;
 			atlOffset=0.55957413;
+		};
+		class Item509
+		{
+			dataType="Trigger";
+			position[]={4956.8672,29.372257,6112.1289};
+			class Attributes
+			{
+				onActivation="null = [1,1,2,2,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				activationBy="WEST";
+				isRectangle=1;
+			};
+			id=3346;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item510
+		{
+			dataType="Trigger";
+			position[]={4970.9248,29.33419,6112.0859};
+			class Attributes
+			{
+				onActivation="null = [1,1,2,2,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				sizeA=5;
+				sizeB=5;
+				sizeC=5;
+				activationBy="WEST";
+				isRectangle=1;
+				isServerOnly=1;
+			};
+			id=3347;
+			type="EmptyDetectorArea10x10";
+		};
+		class Item511
+		{
+			dataType="Marker";
+			position[]={4956.9678,1.1101749e+014,6112.4248};
+			name="marker_5";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=6.2969999;
+			b=5.8850002;
+			id=3348;
+			atlOffset=1.1101749e+014;
+		};
+		class Item512
+		{
+			dataType="Marker";
+			position[]={4971.0122,1.1101749e+014,6112.3613};
+			name="marker_6";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=6.2969999;
+			b=5.8850002;
+			id=3349;
+			atlOffset=1.1101749e+014;
 		};
 	};
 	class Connections
