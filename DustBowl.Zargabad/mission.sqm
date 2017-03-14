@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=88;
+		nextID=93;
 	};
 	class Camera
 	{
-		pos[]={4958.9731,77.616768,6081.6084};
-		dir[]={0.014158506,-0.76214665,0.64741588};
-		up[]={0.016664052,0.64736062,0.76199371};
-		aside[]={0.99985468,-7.3960109e-007,-0.021862201};
+		pos[]={4487.124,253.51591,4488.0708};
+		dir[]={-0.5966267,-0.67417961,-0.43535545};
+		up[]={-0.54460758,0.73856485,-0.39739659};
+		aside[]={-0.58945394,1.0908116e-007,0.80780983};
 	};
 };
 binarizationWanted=0;
@@ -787,7 +787,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=513;
+		items=511;
 		class Item0
 		{
 			dataType="Object";
@@ -41862,7 +41862,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3118;
 			type="EmptyDetectorArea10x10";
@@ -41880,7 +41879,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3119;
 			type="EmptyDetectorArea10x10";
@@ -41899,7 +41897,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3120;
 			type="EmptyDetectorArea10x10";
@@ -41918,7 +41915,6 @@ class Mission
 				sizeC=4.1869998;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3121;
 			type="EmptyDetectorArea10x10";
@@ -41937,7 +41933,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3122;
 			type="EmptyDetectorArea10x10";
@@ -41956,7 +41951,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3123;
 			type="EmptyDetectorArea10x10";
@@ -41975,7 +41969,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3124;
 			type="EmptyDetectorArea10x10";
@@ -41995,7 +41988,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3125;
 			type="EmptyDetectorArea10x10";
@@ -42003,20 +41995,21 @@ class Mission
 		class Item469
 		{
 			dataType="Trigger";
-			position[]={4595.415,18.200747,4139.5703};
-			angle=5.0995402;
+			position[]={4595.415,18.200754,4139.5698};
+			angle=5.0995378;
 			class Attributes
 			{
 				name="DynamicAI_8";
-				sizeA=69.510582;
-				sizeB=34.132069;
+				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				sizeA=69.511002;
+				sizeB=34.132;
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3126;
 			type="EmptyDetectorArea10x10";
+			atlOffset=1.9073486e-006;
 		};
 		class Item470
 		{
@@ -46532,7 +46525,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3303;
 			type="EmptyDetectorArea10x10";
@@ -46550,7 +46542,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3304;
 			type="EmptyDetectorArea10x10";
@@ -47136,7 +47127,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3305;
 			type="EmptyDetectorArea10x10";
@@ -47240,7 +47230,6 @@ class Mission
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
-				isServerOnly=1;
 			};
 			id=3311;
 			type="EmptyDetectorArea10x10";
@@ -49616,39 +49605,6 @@ class Mission
 		};
 		class Item509
 		{
-			dataType="Trigger";
-			position[]={4956.8672,29.372257,6112.1289};
-			class Attributes
-			{
-				onActivation="null = [1,1,2,2,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
-				sizeA=5;
-				sizeB=5;
-				sizeC=5;
-				activationBy="WEST";
-				isRectangle=1;
-			};
-			id=3346;
-			type="EmptyDetectorArea10x10";
-		};
-		class Item510
-		{
-			dataType="Trigger";
-			position[]={4970.9248,29.33419,6112.0859};
-			class Attributes
-			{
-				onActivation="null = [1,1,2,2,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
-				sizeA=5;
-				sizeB=5;
-				sizeC=5;
-				activationBy="WEST";
-				isRectangle=1;
-				isServerOnly=1;
-			};
-			id=3347;
-			type="EmptyDetectorArea10x10";
-		};
-		class Item511
-		{
 			dataType="Marker";
 			position[]={4956.9678,1.1101749e+014,6112.4248};
 			name="marker_5";
@@ -49660,7 +49616,7 @@ class Mission
 			id=3348;
 			atlOffset=1.1101749e+014;
 		};
-		class Item512
+		class Item510
 		{
 			dataType="Marker";
 			position[]={4971.0122,1.1101749e+014,6112.3613};

@@ -12,10 +12,17 @@ if (hasInterface) then {
 	"colorCorrections" ppEffectEnable true;
 	
 	setViewDistance 1000;
+	
+	cutText ["DustBowl", "BLACK FADED"];
+	10 fadeSound 1;
+	10 fadeMusic 0.5;
+	sleep 5;
+	titleCut ["", "BLACK IN", 5];
+	
 	searchparts addAction ["<t color='#005EFF'>Search for toolkit</t>",{[[[searchparts],"scripts\search.sqf"],"BIS_fnc_execVM",true,true] call BIS_fnc_MP;}];
 	[] execVM "briefing.sqf";
 };
 
 [] execVM "scripts\AIcontrol.sqf";
 [] execVM "VCOMAI\init.sqf";
-//null = [340,14400,false,false,false] execvm "AL_dust_storm\al_duststorm.sqf";
+null = [340,14400,false,false,false] execvm "AL_dust_storm\al_duststorm.sqf";
