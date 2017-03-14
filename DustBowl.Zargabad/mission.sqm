@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=93;
+		nextID=98;
 	};
 	class Camera
 	{
-		pos[]={4487.124,253.51591,4488.0708};
+		pos[]={4540.4106,312.24316,4529.9473};
 		dir[]={-0.5966267,-0.67417961,-0.43535545};
 		up[]={-0.54460758,0.73856485,-0.39739659};
 		aside[]={-0.58945394,1.0908116e-007,0.80780983};
@@ -787,7 +787,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=511;
+		items=509;
 		class Item0
 		{
 			dataType="Object";
@@ -41336,15 +41336,16 @@ class Mission
 		class Item453
 		{
 			dataType="Marker";
-			position[]={4011.595,2.3200252e+014,5669.6948};
+			position[]={4011.595,6.8188025e+013,5669.6948};
 			name="civspawner2_small";
 			markerType="RECTANGLE";
 			type="rectangle";
+			alpha=0;
 			a=67.075996;
 			b=48.035;
 			angle=336.36099;
 			id=2881;
-			atlOffset=2.3200252e+014;
+			atlOffset=6.8188025e+013;
 		};
 		class Item454
 		{
@@ -41996,7 +41997,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4595.415,18.200754,4139.5698};
-			angle=5.0995378;
+			angle=5.0995374;
 			class Attributes
 			{
 				name="DynamicAI_8";
@@ -49602,32 +49603,6 @@ class Mission
 			};
 			id=3344;
 			atlOffset=0.55957413;
-		};
-		class Item509
-		{
-			dataType="Marker";
-			position[]={4956.9678,1.1101749e+014,6112.4248};
-			name="marker_5";
-			markerType="RECTANGLE";
-			type="rectangle";
-			colorName="ColorRed";
-			a=6.2969999;
-			b=5.8850002;
-			id=3348;
-			atlOffset=1.1101749e+014;
-		};
-		class Item510
-		{
-			dataType="Marker";
-			position[]={4971.0122,1.1101749e+014,6112.3613};
-			name="marker_6";
-			markerType="RECTANGLE";
-			type="rectangle";
-			colorName="ColorRed";
-			a=6.2969999;
-			b=5.8850002;
-			id=3349;
-			atlOffset=1.1101749e+014;
 		};
 	};
 	class Connections
