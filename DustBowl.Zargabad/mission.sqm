@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=103;
+		nextID=108;
 	};
 	class Camera
 	{
-		pos[]={4962.5244,72.405762,6104.2607};
-		dir[]={-0.012083265,-0.81870514,0.57412106};
-		up[]={-0.017226202,0.57421088,0.81852496};
-		aside[]={0.99979472,1.0670301e-006,0.021039961};
+		pos[]={4460.459,294.55746,3608.5146};
+		dir[]={-0.016606564,-0.62653768,0.77921671};
+		up[]={-0.01334988,0.77939147,0.62639695};
+		aside[]={0.99977571,-8.8586603e-008,0.021307474};
 	};
 };
 binarizationWanted=0;
@@ -39012,15 +39012,15 @@ class Mission
 		class Item425
 		{
 			dataType="Marker";
-			position[]={4132.7671,2.9625268e+019,4180.9482};
+			position[]={4167.7212,0,4148.4468};
 			name="civspawner";
 			markerType="RECTANGLE";
 			type="rectangle";
 			alpha=0;
-			a=270.759;
-			b=190.995;
+			a=446.655;
+			b=213.851;
 			id=2827;
-			atlOffset=2.9625268e+019;
+			atlOffset=-16.782339;
 		};
 		class Item426
 		{
@@ -39384,7 +39384,7 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=0;
+									value=1;
 								};
 							};
 						};
@@ -42245,7 +42245,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4274.415,16.458076,3120.562};
-			angle=5.0995378;
+			angle=5.0995374;
 			class Attributes
 			{
 				name="DynamicAI_6";
@@ -42264,7 +42264,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3649.135,12.327508,3232.533};
-			angle=5.0995378;
+			angle=5.0995374;
 			class Attributes
 			{
 				name="DynamicAI_7";
@@ -42282,7 +42282,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4595.415,18.200754,4139.5698};
-			angle=5.0995378;
+			angle=5.0995374;
 			class Attributes
 			{
 				name="DynamicAI_8";
