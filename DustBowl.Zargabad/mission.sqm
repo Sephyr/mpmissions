@@ -1,4 +1,4 @@
-version=52;
+version=53;
 class EditorData
 {
 	moveGridStep=1;
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=98;
+		nextID=103;
 	};
 	class Camera
 	{
-		pos[]={4540.4106,312.24316,4529.9473};
-		dir[]={-0.5966267,-0.67417961,-0.43535545};
-		up[]={-0.54460758,0.73856485,-0.39739659};
-		aside[]={-0.58945394,1.0908116e-007,0.80780983};
+		pos[]={4962.5244,72.405762,6104.2607};
+		dir[]={-0.012083265,-0.81870514,0.57412106};
+		up[]={-0.017226202,0.57421088,0.81852496};
+		aside[]={0.99979472,1.0670301e-006,0.021039961};
 	};
 };
 binarizationWanted=0;
@@ -156,14 +156,14 @@ class AddonsMetaData
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item2
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
@@ -200,14 +200,14 @@ class AddonsMetaData
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item10
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item11
 		{
@@ -244,7 +244,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Wrecks";
 			name="Arma 3 - Vehicle Wrecks";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item18
 		{
@@ -266,14 +266,14 @@ class AddonsMetaData
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item22
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item23
 		{
@@ -407,14 +407,14 @@ class AddonsMetaData
 			className="A3_Characters_F_Mark";
 			name="Arma 3 Marksmen - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item45
 		{
 			className="A3_Weapons_F_Exp";
 			name="Arma 3 Apex - Weapons and Accessories";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item46
 		{
@@ -433,7 +433,7 @@ class AddonsMetaData
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item49
 		{
@@ -460,14 +460,14 @@ class AddonsMetaData
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item54
 		{
 			className="A3_Structures_F_EPC";
 			name="Arma 3 Win Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item55
 		{
@@ -506,14 +506,14 @@ class AddonsMetaData
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item62
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item63
 		{
@@ -547,7 +547,7 @@ class AddonsMetaData
 			className="A3_Structures_F_EPA";
 			name="Arma 3 Survive Episode - Buildings and Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item69
 		{
@@ -566,7 +566,7 @@ class AddonsMetaData
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item72
 		{
@@ -615,7 +615,7 @@ class AddonsMetaData
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item79
 		{
@@ -636,7 +636,7 @@ class AddonsMetaData
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item82
 		{
@@ -650,7 +650,7 @@ class AddonsMetaData
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			url="https://www.arma3.com";
 		};
 		class Item84
 		{
@@ -810,6 +810,44 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="Enh_onKilledEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="Enh_onRespawnEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				class Attribute2
+				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
 					class Value
@@ -823,11 +861,30 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[[[[],[]],[[],[]],[[""ACE_bloodIV"",""ACE_epinephrine"",""ACE_morphine"",""ACE_personalAidKit"",""ACE_elasticBandage"",""ACE_EntrenchingTool"",""ToolKit"",""ACE_fieldDressing"",""ACE_bloodIV_250"",""ACE_bloodIV_500"",""ACE_CableTie""],[25,26,30,50,60,6,1,20,10,15,10]],[[],[]]],false]";
+							value="[[[[],[]],[[],[]],[[""ACE_bloodIV"",""ACE_epinephrine"",""ACE_morphine"",""ACE_personalAidKit"",""ACE_elasticBandage"",""ACE_EntrenchingTool"",""ACE_fieldDressing"",""ACE_bloodIV_250"",""ACE_bloodIV_500"",""ACE_CableTie""],[25,26,30,50,60,6,20,10,15,10]],[[],[]]],false]";
 						};
 					};
 				};
-				nAttributes=1;
+				class Attribute3
+				{
+					property="Enh_onDamagedEvent";
+					expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="false";
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item1
@@ -39238,6 +39295,82 @@ class Mission
 					{
 						class Attribute0
 						{
+							property="Enh_onDamagedEvent";
+							expression="if !(_value == 'false') then {_this addEventHandler ['dammaged',_value]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="false";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="Enh_taskPatrol_combatMode";
+							expression="_this setVariable ['Enh_randomPatrol_combatMode',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="YELLOW";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="Enh_onRespawnEvent";
+							expression="if !(_value == 'false') then {_this addEventHandler ['respawn',_value]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="false";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_taskPatrol_formation";
+							expression="_this setVariable ['Enh_randomPatrol_formation',_value]";
+							class Value
+							{
+								class data
+								{
+									nil=1;
+									class type
+									{
+										type[]=
+										{
+											"ANY"
+										};
+									};
+								};
+							};
+						};
+						class Attribute4
+						{
 							property="allowDamage";
 							expression="_this allowdamage _value;";
 							class Value
@@ -39251,11 +39384,106 @@ class Mission
 											"BOOL"
 										};
 									};
-									value=1;
+									value=0;
 								};
 							};
 						};
-						class Attribute1
+						class Attribute5
+						{
+							property="Enh_taskPatrol_behaviour";
+							expression="_this setVariable ['Enh_randomPatrol_behaviour',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="SAFE";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="Enh_taskPatrol_speed";
+							expression="_this setVariable ['Enh_randomPatrol_speedMode',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="LIMITED";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="Enh_animCombEquipment";
+							expression="_this setVariable ['Enh_animCombEquipment',_value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="Enh_animType";
+							expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animEquipment'] remoteExec ['BIS_fnc_ambientAnim',0,true];					};				};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="Enh_onKilledEvent";
+							expression="if !(_value == 'false') then {_this addEventHandler ['killed',_value]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="false";
+								};
+							};
+						};
+						class Attribute10
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -39274,7 +39502,64 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute11
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENG";
+								};
+							};
+						};
+						class Attribute12
+						{
+							property="Enh_animCombType";
+							expression="				if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};				if !(_value isEqualTo '' && isServer) then				{					[_this,_value] spawn					{						waitUntil {time > 0.2};						[_this select 0,_this select 1,(_this select 0) getVariable 'Enh_animCombEquipment'] remoteExec ['BIS_fnc_ambientAnimCombat',0,true];					};				};			";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="";
+								};
+							};
+						};
+						class Attribute13
+						{
+							property="Enh_animEquipment";
+							expression="_this setVariable ['Enh_animEquipment',_value];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ASIS";
+								};
+							};
+						};
+						nAttributes=14;
 					};
 				};
 				class Item1
@@ -41857,7 +42142,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=101.334;
 				sizeB=68.419998;
 				sizeC=5;
@@ -41874,7 +42159,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_1";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=101.334;
 				sizeB=68.419998;
 				sizeC=5;
@@ -41892,7 +42177,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_2";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=101.334;
 				sizeB=68.419998;
 				sizeC=5;
@@ -41910,7 +42195,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_3";
-				onActivation="null = [5,8,2,5,300,500,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [5,8,2,5,300,500,300,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=208.194;
 				sizeB=98.128998;
 				sizeC=4.1869998;
@@ -41928,7 +42213,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_4";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=101.334;
 				sizeB=159.29201;
 				sizeC=5;
@@ -41946,7 +42231,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_5";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=101.334;
 				sizeB=113.499;
 				sizeC=5;
@@ -41960,11 +42245,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4274.415,16.458076,3120.562};
-			angle=5.0995359;
+			angle=5.0995378;
 			class Attributes
 			{
 				name="DynamicAI_6";
-				onActivation="null = [2,5,2,5,300,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,300,400,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=101.334;
 				sizeB=68.419998;
 				sizeC=5;
@@ -41979,11 +42264,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={3649.135,12.327508,3232.533};
-			angle=5.0995359;
+			angle=5.0995378;
 			class Attributes
 			{
 				name="DynamicAI_7";
-				onActivation="null = [5,8,2,5,300,500,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [5,8,2,5,300,500,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=287.79999;
 				sizeB=79.694;
 				sizeC=5;
@@ -41997,11 +42282,11 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4595.415,18.200754,4139.5698};
-			angle=5.0995374;
+			angle=5.0995378;
 			class Attributes
 			{
 				name="DynamicAI_8";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=69.511002;
 				sizeB=34.132;
 				sizeC=5;
@@ -46516,13 +46801,13 @@ class Mission
 		class Item478
 		{
 			dataType="Trigger";
-			position[]={4122.2568,16.228067,4281.1685};
+			position[]={4122.2568,16.228079,4281.168};
 			class Attributes
 			{
 				name="DynamicAI_9";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
-				sizeA=61.859142;
-				sizeB=54.656101;
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				sizeA=61.859001;
+				sizeB=54.655998;
 				sizeC=5;
 				activationBy="WEST";
 				isRectangle=1;
@@ -46537,7 +46822,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_10";
-				onActivation="null = [5,7,3,5,300,400,200,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [5,7,3,5,300,400,100,""CUPTKA"",""Desert""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=49.797001;
 				sizeB=48.046001;
 				sizeC=5;
@@ -47122,7 +47407,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_11";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=61.859001;
 				sizeB=54.655998;
 				sizeC=5;
@@ -47225,7 +47510,7 @@ class Mission
 			class Attributes
 			{
 				name="DynamicAI_12";
-				onActivation="null = [2,5,2,5,250,400,200,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
+				onActivation="null = [2,5,2,5,250,400,100,""CUPTKA"",""Urban""] execVM ""DAS\DynamicAISpawn.sqf"";";
 				sizeA=61.859001;
 				sizeB=54.655998;
 				sizeC=5;

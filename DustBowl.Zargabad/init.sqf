@@ -25,4 +25,6 @@ if (hasInterface) then {
 
 [] execVM "scripts\AIcontrol.sqf";
 [] execVM "VCOMAI\init.sqf";
+null = [20,"civspawner",0] execVM "SimplePatrolScript\initialize.sqf";
+null = [5,"civspawner2_small",0] execVM "SimplePatrolScript\initialize.sqf";
 null = [340,14400,false,false,false] execvm "AL_dust_storm\al_duststorm.sqf";
